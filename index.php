@@ -8,15 +8,22 @@ require_once("config.php");
 
 // echo json_encode($usuarios);
 
-$root = new Usuario();
+// Carrega 1 usuário:
+// $root = new Usuario();
+// $root->loadById(3);
+// echo $root;
 
-$root->loadById(3);
+// Carrega Todos usuários:
+// $lista = Usuario::getList();
+// echo json_encode($lista);
 
-echo $root;
+// carrega usuarios que tenha a palavra passada como parametro do banco de dados.
+// $search = Usuario::search("root");
+// echo json_encode($search);
 
-
-
-
+$valida = new Usuario();
+$valida->login("root","root");
+echo $valida;
 
 
 ?>

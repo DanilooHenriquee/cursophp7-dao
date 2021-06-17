@@ -21,9 +21,22 @@ require_once("config.php");
 // $search = Usuario::search("root");
 // echo json_encode($search);
 
-$valida = new Usuario();
-$valida->login("root","root");
-echo $valida;
+// mostra usuarios pelo login e password;
+// $usuario = new Usuario();
+// $usuario->login("root","root");
+// echo $usuario;
+
+// Inserir novo Usuario no banco de dados.
+// $aluno = new Usuario("Danilo","!@#321");
+// $aluno->insert();
+// echo $aluno;
+
+
+$usuario = new Usuario();
+$usuario -> loadById(8);
+$usuario -> update("Professor", "!@#$%¨&*");
+
+echo $usuario;
 
 
 ?>

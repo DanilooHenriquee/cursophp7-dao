@@ -32,13 +32,13 @@ require_once("config.php");
 // echo $aluno;
 
 // Alterar o login e senha de um usuario no banco de dados.
-/*
-$usuario = new Usuario();
-$usuario -> loadById(8);
-$usuario -> update("Professor", "!@#$%¨&*");
-echo $usuario;
-*/
 
+// $usuario = new Usuario();
+// $usuario -> loadById(8);
+// $usuario -> update("Professor", "!@#$%¨&*");
+// echo $usuario;
+
+// Deletar um determinado usuario pelo id.
 $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->delete();
